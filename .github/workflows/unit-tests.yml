@@ -21,4 +21,7 @@ jobs:
         run: docker build -f Dockerfile.dev -t fantkolja/ci-cd-tutorial .
       - 
         name: Run Tests
-        run: docker run --rm fantkolja/ci-cd-tutorial "npm run test"
+        uses: addnab/docker-run-action@v3
+        with:
+          image: fantkolja/ci-cd-tutorial:latest
+          run: npm run test
