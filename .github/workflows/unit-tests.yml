@@ -18,7 +18,7 @@ jobs:
           install: true
       -
         name: Build
-        run: docker build -f Dockerfile.dev -t fantkolja/ci-cd-tutorial .
+        run: docker build -f Dockerfile.dev -t fantkolja/ci-cd-tutorial:latest .
       - 
         name: Run Tests
         uses: addnab/docker-run-action@v3
