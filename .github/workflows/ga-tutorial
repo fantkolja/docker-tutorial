@@ -1,5 +1,5 @@
 name: ga-tutorial
-on: workflow_dispatch
+on:
 jobs:
   default:
     runs-on: ubuntu-latest
