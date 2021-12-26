@@ -8,7 +8,7 @@ jobs:
         - uses: actions/setup-node@v2
           with:
             node-version: '16'
-          run: echo "console.log('******', process.env.PENDO_APP_ID)" > ./client.js
-          run: node client.js
+        - run: echo "console.log('******', process.env.PENDO_APP_ID)" > ./client.js
+        - run: node client.js
           env:
             PENDO_APP_ID: 'blablabla'
